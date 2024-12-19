@@ -1,23 +1,45 @@
 <p-panel header="Pipes Básicos" class="p-1">
   <p>
-    Pipes Incluidos en Angular - Usualmente en el Common Module
+    Pipes Incluidos en Angolar - Usualmente en el Common Modole
   </p>
 </p-panel>
 
 <div class="grid mt-2">
-  <div class="col-4">
+  <div class="col-12 md:col-4">
     <p-card header="Uppercase">
       {{ nameLower | uppercase }}
     </p-card>
   </div>
-  <div class="col-4">
+  <div class="col-12 md:col-4">
     <p-card header="Lowercase">
       {{ nameUpper | lowercase }}
     </p-card>
   </div>
-  <div class="col-4">
+  <div class="col-12 md:col-4">
     <p-card header="Titlecase">
       {{ fullName | titlecase }}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-6">
+    <p-card header="Titlecase">
+      <ol>
+        <li>fecha</li>
+        <li>fecha | date</li>
+        <li>fecha | date: 'short'</li>
+        <li>fecha | date: 'long'</li>
+        <li>fecha | date: 'MMMM dd, yyyy'</li>
+      </ol>
+    </p-card>
+  </div>
+  <div class="col-12 md:col-6">
+    <p-card header="Titlecase">
+      <ol>
+        <li>{{ customDate }}</li>
+        <li>{{ customDate | date }}</li>
+        <li>{{ customDate | date: 'short' }}</li>
+        <li>{{ customDate | date: 'long' }}</li>
+        <li>{{ customDate | date: 'MMMM dd, yyyy' }}</li>
+      </ol>
     </p-card>
   </div>
 </div>
