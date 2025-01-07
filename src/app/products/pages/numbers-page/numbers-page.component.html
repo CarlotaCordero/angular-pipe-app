@@ -1,1 +1,13 @@
-<p>numbers-page works!</p>
+<p-panel header="Pipes Numéricos" class="p-1">
+  <p>
+    Pipes Incluidos en Angular - Usualmente en el Common Modole
+  </p>
+</p-panel>
+
+<div class="grid">
+  <div class="col-12 md:col-4">
+    <p-card header="Ventas Netas" subheader="Año Actual">
+      {{ totalSells | currency: 'EUR' }}
+    </p-card>
+  </div>
+</div>

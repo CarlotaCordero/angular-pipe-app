@@ -1,10 +1,10 @@
 <p-panel header="Pipes Básicos" class="p-1">
   <p>
-    Pipes Incluidos en Angolar - Usualmente en el Common Modole
+    Pipes Incluidos en Angular - Usualmente en el Common Modole
   </p>
 </p-panel>
 
-<div class="grid mt-2">
+<div class="grid">
   <div class="col-12 md:col-4">
     <p-card header="Uppercase">
       {{ nameLower | uppercase }}
@@ -50,13 +50,14 @@
         <li>{{ customDate | date: 'short' }}</li>
         <li>{{ customDate | date: 'long' }}</li>
         <li>{{ customDate | date: 'MMMM dd, yyyy' }}</li>
+        <li>{{ customDate | date: 'MMMM dd, yyyy' }}</li>
       </ol>
 
       <hr />
 
       <ol>
         <li>{{ customDate | date: 'long' : 'GMT-1' }}</li>
-        <li>{{ customDate | date: 'long' : 'GMT-4' }}</li>
+        <li>{{ customDate | date: 'long' : 'GMT-12' }}</li>
         <li>{{ customDate | date: 'long' : 'GMT-1' : 'es' }}</li>
         <li>{{ customDate | date: 'long' : 'GMT-1' : 'fr' }}</li>
       </ol>
