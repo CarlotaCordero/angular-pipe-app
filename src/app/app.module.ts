@@ -10,12 +10,13 @@ import localEs from '@angular/common/locales/es';
 import localFr from '@angular/common/locales/fr';
 
 import { registerLocaleData } from '@angular/common';
+import { OrderComponent } from './products/pages/order/order.component';
 registerLocaleData(localEs);
 registerLocaleData(localFr);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
