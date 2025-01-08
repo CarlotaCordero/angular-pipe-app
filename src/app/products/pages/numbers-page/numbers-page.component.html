@@ -7,7 +7,19 @@
 <div class="grid">
   <div class="col-12 md:col-4">
     <p-card header="Ventas Netas" subheader="Año Actual">
-      {{ totalSells | currency: 'EUR' }}
+      {{ totalSells | number: '1.2-2' }}
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="Ventas Netas" subheader="Año Actual">
+      {{ totalSells + 1235 | currency: 'EUR' }}
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="Ventas Netas" subheader="Año Actual">
+      {{ percent | percent: '1.2-2' }}
     </p-card>
   </div>
 </div>
